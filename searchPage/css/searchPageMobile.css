@@ -1,0 +1,268 @@
+@media (orientation:portrait) {
+  body {
+    font-family: 'OpenSans-Regular';
+  }
+
+  nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    align-items: center;
+    height: 26.837929vw;
+  }
+
+  .socialMedias {
+    width: 35vw;
+  }
+
+  .logo {
+    width: 44vw;
+    position: relative;
+    margin-top: -5vw;
+    top: 7vw;
+    margin-right: 12vw;
+  }
+
+  .userMenu {
+    width: 11vw;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5vw;
+    margin-top: 4vw;
+  }
+
+  .burgerMenu {
+    display: flex;
+    flex-direction: column;
+    height: 4vw;
+    justify-content: space-between;
+  }
+
+  .avatar {
+    width: 12vw;
+    margin-top: 3vw;
+  }
+
+  .burgerTopLine {
+    width: 100%;
+    height: 1vw;
+    background: white;
+  }
+
+  .burgerBottomLine {
+    width: 100%;
+    height: 1vw;
+    background: white;
+  }
+
+  .searchContainer {
+    display: flex;
+    padding: 0 5vw;
+    position: relative;
+    margin-top: 12vw;
+  }
+
+  .searchBox {
+    border: 5px solid #ffa800;
+    border-radius: 10vw;
+    width: 100%;
+    padding-left: 5%;
+    height: 12vw;
+    box-sizing: border-box;
+    font-size: 5vw;
+  }
+
+  .searchContainer button {
+    background: #ffa800;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 12vw;
+    width: 12vw;
+    right: 5vw;
+    top: 0;
+    border: none;
+  }
+
+  .searchContainer button img {
+    width: 6.5vw;
+    height: 6vw;
+  }
+
+  /* sectionSearchedResult start */
+  .sectionSearchedResult {
+    position: relative;
+    margin-top: 16vw;
+  }
+
+  .resultContainer {
+    position: relative;
+    margin-bottom: 15vw;
+  }
+
+  .filterDolarSignContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 4vw;
+    opacity: 0;
+    left: -5vw;
+    transition: 0.7s ease;
+  }
+
+  .someFilters {
+    margin-bottom: 14vw;
+  }
+
+  .filterDolarSign {
+    position: relative;
+    width: 13vw;
+    margin-left: 2vw;
+  }
+
+  .filterDolarSignContainer p {
+    font-size: 5vw;
+    margin: 0 2vw;
+  }
+
+  .resultImageContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .resultImageContainer img {
+    width: 100%;
+  }
+
+  .detailPopUpButon {
+    position: absolute;
+    right: -7vw;
+    top: 18vw;
+    background: #fdd830;
+    width: 14vw;
+    height: 14vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .detailPopUpButon p {
+    color: white;
+    position: relative;
+    font-size: 10vw;
+    right: 3vw;
+    text-shadow: -4px -2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .priceContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff8826;
+  }
+
+  .priceContainer p {
+    color: white;
+    font-size: 7vw;
+    margin: 2vw 0;
+  }
+
+  .milageContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eceef0;
+    color: #ff8826;
+  }
+
+  .milageContainer p {
+    font-size: 7vw;
+    margin: 2vw 0;
+  }
+
+  /* car detail popup  start*/
+  .carDescriptionPopUp iframe {
+    width: 100vw;
+    position: relative;
+    display: block;
+    height: inherit;
+  }
+
+  .carDescriptionPopUp {
+    position: fixed;
+    width: 0%;
+    height: 100%;
+    background: white;
+    transition: 1s ease;
+    right: 0;
+    top: 0;
+    font-size: 10vw;
+    overflow: scroll;
+  }
+
+  .carDescriptionPopUp p {
+    margin: 0;
+    position: absolute;
+    right: 4vw;
+    z-index: 1;
+  }
+
+  /* car detail popup end*/
+
+
+  /* fixed items start*/
+  .filterPopup {
+    position: fixed;
+    width: 0%;
+    height: 100%;
+    background: white;
+    transition: 1s ease;
+    left: 0;
+    top: 0;
+    font-size: 10vw;
+    overflow: hidden;
+  }
+
+
+  .someFilterSECTION{
+    width: 100vw;
+  }
+
+  .closeFilter{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 6vw;
+    margin: 7vw 0;
+  }
+
+  .filterClose{
+    width: 12vw;
+    transform: rotateY(180deg);
+    margin-left: 3vw;
+  }
+
+  .makeNewSearch{
+    font-family: 'OpenSans-Bold';
+    font-size: 7vw;
+    padding: 3vw 0;
+    width: 80vw;
+    color: white;
+    border: none;
+    background: #fd5a22;
+    margin-left: 10%;
+  }
+
+  /* fixed items end */
+  /* sectionSearchedResult end */
+  body::before {
+    display: none;
+  }
+}
