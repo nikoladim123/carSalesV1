@@ -134,6 +134,9 @@ nav {
 
 .addImage {
   width: 100%;
+  transition: 2s ease-in;
+  transform: scale(1);
+  transform-origin: center;
 }
 
 .adOverlayContainer {
@@ -152,6 +155,9 @@ nav {
 
 .addBox:hover .adOverlayContainer {
   opacity: 1;
+}
+.addBox:hover .addImage{
+  transform:scale(1.35);
 }
 
 .overlayItem {

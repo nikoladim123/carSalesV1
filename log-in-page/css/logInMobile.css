@@ -1,0 +1,138 @@
+@media (orientation:portrait) {
+  header {
+    background: linear-gradient(45deg, rgba(119, 57, 243, 1) 0%, rgba(119, 57, 243, 1) 14%, rgba(87, 235, 255, 1) 100%);
+    min-height: calc(100vh - 26.837929vw);
+    padding: 0.1px;
+  }
+
+  .logInForm {
+    position: relative;
+    flex-direction: column;
+    padding: 0 4.375vw;
+    margin-top: 19.5vw;
+    padding: 0 5vw;
+    width: 100%;
+    order: 1;
+  }
+
+  .loginWithSocialMediaContainer {
+    width: 66.125vw;
+    display: flex;
+    justify-content: space-between;
+    background: #ededed;
+    border-radius: 10vw;
+    padding: 2px 1px;
+    align-items: center;
+    margin-top: 9.560975vw;
+    order: 3;
+    padding: 1vw 4vw;
+  }
+
+  .loginWithSocialMediaContainer a {
+    position: relative;
+    display: block;
+    height: 11.875vw;
+  }
+
+  .loginWithSocialMediaContainer a img {
+    filter: brightness(1);
+    transition: 0.5s ease;
+    width: 11.875vw;
+  }
+
+  .orContainer {
+    margin-top: 0.5vw;
+    margin-bottom: -2.5vw;
+    order: 2;
+  }
+
+  .orContainer p {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 8.1707vw;
+    margin-bottom: 0.75vw;
+  }
+
+  .orContainer p span {
+    border-bottom: 1px solid black;
+    width: 5vw;
+    display: inline-block;
+    margin: 0 0.2vw;
+    display: none;
+  }
+
+  /* REGISTER TWO START */
+  .registerForm {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 9.375vw;
+    margin-top: 30.5vw;
+  }
+
+  .inputTextBox {
+    position: relative;
+    height: 13.125vw;
+    width: 100%;
+    margin-bottom: 2.1875vw;
+    background: rgba(255, 255, 255, 0.35);
+    border: 1px solid white;
+  }
+
+  .inputTextBox img {
+    position: absolute;
+    left: 1vw;
+    top: 0.75vw;
+    width: 12vw;
+  }
+
+  .inputText {
+    height: 100%;
+    border-radius: 20vw;
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.35);
+    width: 100%;
+    padding-left: 20%;
+    font-size: 4.375vw;
+  }
+
+  .checkBoxContainer {
+    display: flex;
+  }
+
+  .inputCheckBox {
+    transform: scale(5.5);
+    position: relative;
+    top: 7.5vw;
+    left: -5vw;
+  }
+
+  .checkBoxContainer p {
+    font-size: 5vw;
+    color: #fcad04;
+  }
+
+  .logInForm button {
+    font-size: 5.625vw;
+    background: #fcad04;
+    border-radius: 20vw;
+    border: 1px solid white;
+    width: 100%;
+    height: 13.75vw;
+    margin-left: 0;
+    color: #555555;
+    font-weight: 700;
+  }
+
+  .eyePasToggle {
+    display: block;
+    right: 3vw !important;
+    left: auto !important;
+    top: 4vw !important;
+    width: 7vw !important;
+  }
+
+  /* REGISTER TWO END */
+}

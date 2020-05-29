@@ -1,0 +1,88 @@
+header{
+  /* background: radial-gradient(ellipse at center, rgba(41,20,127,1) 0%, rgba(210,126,211,1) 100%); */
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.userProfileBg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.userProfileContainer{
+  margin-top: 6.731234vw;
+  position: relative;
+  width: 79.6125vw;
+  background: #ecedef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.buttonBox{
+  width: 100%;
+  /* border: 1px solid; */
+  margin-top: 1.9854721vw;
+  padding: 0 1.45278vw;
+}
+.buttonBox button{
+  border: none;
+  border-radius: 10vw;
+  display: inline;
+  background: #ffa53a;
+  font-size: 1.16222vw;
+  color: white;
+  font-family: 'OpenSans-Bold';
+  font-weight: 700;
+  padding: 0.5210653vw 1.23244vw;
+}
+.buttonBox button:nth-child(1){
+  margin-right: 0.87vw;
+}
+.buttonBox button:nth-child(3){
+  float: right;
+}
+.profileContanet{
+
+margin-top: -6.4vw;
+
+margin-bottom: 7vw;
+}
+.profileImageContent{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.profileImageContainer{
+  /* border: 1px solid red; */
+  border-radius: 50%;
+  width: 14.624697vw;
+  height: 14.624697vw;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2vw;
+  justify-content: center;
+}
+.profileImage{
+  width:100%;
+
+}
+.profileContanet p{
+  font-size: 1.0876513vw;
+}
+.profileContanet p a{
+  color: #27137e;
+  font-weight: 600;
+}
+.profileContanet p a:hover{
+  text-decoration: underline;
+}
+
+.sellSomethingMobile{
+  display: none;
+}

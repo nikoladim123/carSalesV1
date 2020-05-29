@@ -25,6 +25,18 @@
 
 button{
   cursor: pointer;
+  transition: 0.4s ease;
+}
+
+button:hover{
+  filter: brightness(1.15);
+}
+
+video{
+  object-fit:  fill;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 div{
@@ -437,7 +449,7 @@ nav {
     display: flex;
     flex-direction: column;
     margin-right: 5vw;
-    margin-top: -10vw;
+    margin-top: -1vw;
   }
 
   .burgerMenu {
@@ -478,25 +490,25 @@ nav {
   }
 
   nav {
-    height: 26.837929vw;
+    height: 23.837929vw;
     background: rgba(0, 0, 0, 0.9);
     justify-content: space-between;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   .logo {
     position: relative;
     /* height: 8.276863vw; */
     right: 5vw;
-    top: 0;
+    top: 7vw;
     height: 10;
-    height: 40vw;
+    height: 25vw;
     width: auto;
   }
 
   .navSocialMedias {
     display: block;
-    top: -10.9vw;
+    top: -6.9vw;
     left: 3vw;
     position: relative;
   }

@@ -1,0 +1,111 @@
+.logInFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginWithSocialMediaContainer {
+  width: 28.87804vw;
+  display: flex;
+  justify-content: space-between;
+  background: #ededed;
+  border-radius: 10vw;
+  padding: 2px 1px;
+  align-items: center;
+  margin-top: 9.560975vw;
+}
+
+.loginWithSocialMediaContainer a {
+  position: relative;
+  display: block;
+  height: 4.125vw;
+}
+
+.loginWithSocialMediaContainer a img {
+  filter: brightness(1);
+  transition: 0.5s ease;
+  width: 4.125vw;
+}
+
+.loginWithSocialMediaContainer a img:hover {
+  filter: brightness(1.2);
+}
+
+.orContainer {
+    margin-top: 3.5vw;
+    margin-bottom: -3.5vw;
+}
+
+.orContainer p{
+  color: #555555;
+  display: flex;
+  align-items: center;
+  font-size: 1.1707vw;
+  margin-bottom: 0.75vw;
+}
+
+.orContainer p span{
+  border-bottom: 1px solid black;
+  width: 5vw;
+  display: inline-block;
+  margin: 0 0.2vw;
+}
+
+.logInForm {
+  position: relative;
+  flex-direction: column;
+  padding: 0 4.375vw;
+  margin-top: 2.5vw;
+  padding: 0 5vw;
+}
+
+.inputTextBox {
+  margin-top: 0.9751875vw;
+  height: 4.125vw;
+  border-radius: 20vw;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.35);
+  width: 100%;
+  font-size: 3.8375vw;
+  display: flex;
+  align-items: center;
+  color: black;
+  padding-left: 0.2vw;
+  border: 1px solid gray;
+  cursor: pointer;
+  transition: 0.5s ease;
+  background: #f3f3f3;
+}
+
+.inputTextBox img {
+  position: absolute;
+  width: 5vw;
+}
+
+.inputText {
+  height: 100%;
+  border-radius: 20vw;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.35);
+  width: 36.926829vw;
+  padding-left: 16%;
+  font-size: 1.375vw;
+}
+
+.logInForm button {
+  height: 4.125vw;
+  border-radius: 20vw;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.35);
+  width: 36.926829vw;
+  font-size: 2.375vw;
+  font-weight: 700;
+  background: #fdca5c;
+  margin-top: 5.36585vw;
+  color: #706969;
+}
+
+.eyePasToggle{
+  display: none;
+}
