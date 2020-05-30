@@ -34,6 +34,10 @@
   src: url('../fonts/Montserrat-Black.otf') format('truetype');
 }
 
+nav{
+  background:#f59c3e;
+}
+
 .videoDiv {
   padding-top: 0.1px;
   /* margin-left: 6.11vw; */
@@ -49,7 +53,7 @@
   width: 100%;
   height: 100%;
   top: 0;
-  background: rgba(16, 10, 26, 0.75);
+  background: rgba(245,156,62,0.65);
   /* background: radial-gradient(ellipse at center, rgba(255,255,255,0) -100%, rgba(159,134,254,1) 70%); */
 }
 
@@ -64,7 +68,7 @@
   margin-bottom: 1vw;
   font-family: 'Montserrat-Black';
   font-size: 7.5vw;
-  color: #ffae45;
+  color: black;
   opacity: 0.2;
 }
 
@@ -73,11 +77,11 @@
   z-index: 1;
   margin: 0;
   position: absolute;
-  bottom: 0;
+  bottom: 1vw;
   left: 10.5vw;
-  font-size: 2.4vw;
+  font-size: 1.4vw;
   font-family: 'Montserrat-Light';
-  color: #ffae45;
+  color: #6666;
 }
 
 .fastSecured:hover {
@@ -92,7 +96,7 @@
   margin-bottom: -1vw;
   font-family: 'Montserrat-Black';
   font-size: 7.5vw;
-  color: #ffae45;
+  color: black;
   opacity: 0.2;
 }
 
@@ -104,7 +108,7 @@
   left: 10.5vw;
   font-size: 1.1vw;
   font-family: 'Montserrat-Regular';
-  color: #ffae45;
+  color: #6666;
 }
 
 .byKhamak:hover {
@@ -186,7 +190,7 @@
   top: 6vw;
 }
 
-.searchBox {
+.searchBoxBlog {
   width: 100%;
   height: 3.911vw;
   border-radius: 10vw;
@@ -222,13 +226,14 @@
   height: 50%;
 }
 
-.searchBox::placeholder {
+.searchBoxBlog::placeholder {
   font-size: 1.3284vw;
   color: rgb(170, 170, 170);
 }
 
 .leftBlogColumn {
   position: relative;
+  padding-top: 2vw;
 }
 
 .leftBlogColumn h2 {
@@ -256,6 +261,7 @@
 }
 
 .blogPostContainer {
+  cursor: pointer;
   position: relative;
   width: 29.0072vw;
   transition: 0.5s ease;
@@ -398,7 +404,7 @@
 /* rightBlogColumn */
 .rightBlogColumn {
   background: #f4f4f4;
-  padding-top: 11vw;
+  padding-top: 13vw;
   padding-left: 6vw;
   padding-right: 4vw;
   /* width: -webkit-fill-available; */

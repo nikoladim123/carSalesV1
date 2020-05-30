@@ -5,7 +5,7 @@ var megaMenu = document.getElementsByClassName('megaMenu');
 var delayStartCar;
 var searchState = true;
 
-searchHider[0].addEventListener('mouseenter',()=>{
+searchHider[0].addEventListener('click',()=>{
   if(searchState){
     megaMenu[0].style.height = 'calc(100vh - 4.837929vw)';
   }else if(!searchState){

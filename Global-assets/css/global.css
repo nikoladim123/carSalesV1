@@ -204,6 +204,7 @@ nav {
   width: 19vw;
   position: absolute;
   left: 40vw;
+  cursor: pointer;
   /* background:rgba(5,5,5,0.3) */
 }
 
@@ -220,15 +221,15 @@ nav {
 }
 
 .searchTriangle {
-  border: 0.65vw solid transparent;
-  border-top: 0.75vw solid #f49700;
+  border: 0.5vw solid transparent;
+  border-top: 0.65vw solid #f59c3e;
   width: 0px;
   height: 0px;
   display: inline-block;
   position: relative;
   transform: rotate(0deg);
   left: -1vw;
-  top: 0.61vw;
+  top: 0.2vw;
   transition: 1s ease;
 }
 

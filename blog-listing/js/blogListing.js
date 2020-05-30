@@ -60,7 +60,7 @@ mobileArrowOpenPopUp[0].addEventListener('click',()=>{
 
 function backToDesktop() {
   rightBlogColumn[0].style.width = '36vw';
-  rightBlogColumn[0].style.paddingTop = '11vw'
+  rightBlogColumn[0].style.paddingTop = '13vw'
   rightBlogColumn[0].style.paddingLeft = '6vw';
   rightBlogColumn[0].style.paddingRight = '4vw';
   rightBlogColumn[0].style.boxShadow = '5px 2px 25vw 54vw rgba(0,0,0,0)';
