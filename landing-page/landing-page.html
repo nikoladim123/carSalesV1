@@ -555,11 +555,14 @@
 
   <!-- breakpoints to change 'indexScript' JS Desktop/Mobile -->
   <script type="text/javascript">
+  window.addEventListener('resize',()=>{
     if (window.innerHeight < window.innerWidth) {
       document.getElementsByClassName('indexScript')[0].src = 'js/index.js'
     } else {
       document.getElementsByClassName('indexScript')[0].src = 'js/indexMobile.js'
     }
+  });
+
   </script>
 </body>
 

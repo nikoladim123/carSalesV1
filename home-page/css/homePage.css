@@ -1,0 +1,399 @@
+* {
+  font-family: 'OpenSans-Regular';
+}
+
+button {
+  cursor: pointer;
+}
+
+div {
+  /* border: 1px solid; */
+}
+
+@font-face {
+  font-family: 'Cairo-Black';
+  src: url('../fonts/Cairo-Black.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navWrapper {
+  position: relative;
+  height: 9vw;
+  margin-bottom: 9vw;
+}
+
+.navWrapper:hover .navDropDownContainer {
+  height: 2vw;
+}
+
+.navWrapper:hover .navDropDownContainer a {
+  height: 2vw;
+  opacity: 1;
+}
+
+nav {
+  background: #f39a59;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 0.78vw 0;
+}
+
+body {
+  margin: 0;
+}
+
+.logInContainer {
+  margin-left: 3.58353vw;
+  display: flex;
+  align-items: center;
+}
+
+.logInOut {
+  width: 2.130750vw;
+  cursor: pointer;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+}
+
+.navCar {
+  width: 3.34140vw;
+  height: 3.34140vw;
+}
+
+.searchBox {
+  width: 29.87893vw;
+  position: relative;
+}
+
+.inputBox {
+  position: relative;
+  width: 50%;
+  height: 1.9854721vw;
+  transition: 0.75s ease;
+  outline: none;
+}
+
+.searchInput {
+  border: 1px solid white;
+  border-radius: 50vw;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding-left: 1vw;
+  box-sizing: border-box;
+}
+
+.inputBox img {
+  position: absolute;
+  top: 0.30vw;
+  right: 0.45vw;
+  width: 1.21065vw;
+  cursor: pointer;
+}
+
+h1 {
+  position: absolute;
+  right: 0;
+  top: -1.5vw;
+  margin: 0;
+  font-size: 2.66343vw;
+  color: white;
+  font-family: 'Cairo-Black';
+  transition: 0.4s ease;
+}
+
+h1 span {
+  font-size: 1.743341vw;
+}
+
+.userAvatarContainer {
+  margin-right: 2.6150vw;
+}
+
+.userAvatarContainer img {
+  width: 3.631961vw;
+}
+
+.navDropDownContainer {
+  text-align: center;
+  position: relative;
+  height: 0.5vw;
+  background: #d3d3d3;
+  overflow: hidden;
+  transition: 0.5s ease;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.navDropDownContainer a {
+  font-family: 'OpenSans-Regular';
+  font-size: 1vw;
+  margin: 0 1vw;
+  opacity: 0;
+  transition: 0.45s ease;
+}
+
+.navDropDownContainer a:hover {
+  text-decoration: underline;
+}
+
+/* main start */
+.mainContainer {
+  display: flex;
+}
+
+/* left side */
+.leftSide {
+  width: 14.3vw;
+  padding-left: 2.6vw;
+  margin-right: 2vw;
+}
+
+.leftSide button {
+  border-radius: 5px;
+  background: #f39a59;
+  color: white;
+  border: none;
+  font-size: 0.871670vw;
+  padding: 0.34vw 1vw;
+  margin-bottom: .5vw;
+}
+
+.individualCompaniesContainer {
+  margin-bottom: 4.05vw;
+  border-bottom: 1px solid rgba(243, 154, 89, 0.3);
+}
+
+.selectionButtons {
+  margin-bottom: 3.4vw;
+}
+
+.searchByTypeContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2vw;
+}
+
+.searchByTypeContainer p {
+  font-weight: 800;
+  font-size: 1.16222vw;
+}
+
+.searchByTypeExpandContainer {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3vw;
+  box-shadow: 0px 0px 2vw 0vw rgba(0, 0, 0, 0.15);
+  height: 3vw;
+  margin-left: 3vw;
+  cursor: pointer;
+}
+
+.searchByTypeExpandContainer img {
+  width: 1.452784vw;
+}
+
+/* midle paper */
+.middlePaper {
+  width: 58.1113vw;
+  position: relative;
+  box-shadow: 0 0 9vw 1vw rgba(0,0,0,0.2);
+  padding: 0 4.2vw;
+  box-sizing: border-box;
+}
+
+.bannerAdd {
+    width: 100%;
+    margin-top: 1.7vw;
+    margin-bottom: 3vw;
+}
+
+.midPrepopContent {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 6vw;
+}
+
+.singleAddBox {
+  width: 15.932vw;
+  background: #f7f7f7;
+  margin-right: 0.5vw;
+  margin-bottom: 0.5vw;
+  border: 1px solid #f4f4f4;
+}
+
+.addImageBox {
+  width: 100%;
+  height: 10.4600vw;
+  overflow: hidden;
+}
+
+.addImageBox img {
+  width: 100%;
+}
+
+.addQuickInfo {
+  font-size: .968523vw;
+  text-align: center;
+  margin: 0vw 1vw;
+  margin-top: 2vw;
+}
+
+.price {
+  text-align: center;
+  font-size: 1.16222vw;
+  font-weight: 900;
+  color: #edaf31;
+  margin-top: 0.5vw;
+}
+
+.viewDetailButtonBox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.viewDetailButton {
+  background: transparent;
+  border: 1px solid black;
+  height: 2.4vw;
+  width: 11.2vw;
+  font-weight: 600;
+  margin-top: 0.4vw;
+}
+
+/* right side */
+.rightSide{
+  padding: 0 2vw;
+    width: 17vw;
+}
+
+.popularPostsContainer h3{
+  color: #edaf31;
+  font-size: 1.74334vw;
+  font-weight: 800;
+}
+.popularPostBox {
+  display: flex;
+  margin-bottom: 0.5vw;
+}
+
+.popularPostImageBox {
+  width: 7.263922vw;
+  height: 7.263922vw;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.popularPostImageBox:hover{
+  filter: brightness(1.2);
+}
+
+.popularPostImageBox img {
+  width: 100%;
+}
+
+.popularPostDescriptionBox {
+  color: #666666;
+  margin-left: 1.5vw;
+}
+
+.popularPostName {
+  font-size: 1.12784vw;
+  font-weight: 700;
+  margin: 0;
+}
+
+.popularPostAuthorName {
+  font-size: 0.871670vw;
+  margin: 0;
+  margin-top: 0.7vw;
+}
+
+.popularPostDate {
+  font-size: 0.871670vw;
+  margin: 0;
+  margin-top: 0.3vw;
+}
+
+.ourSponsorsContainer {
+  margin-top: 3.45vw;
+}
+
+.ourSponsorsContent {
+  margin-top: -1vw;
+}
+
+.ourSponsorImageBox {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2vw;
+  cursor: pointer;
+}
+.ourSponsorImageBox::before{
+  content: '';
+  display: block;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+  position: absolute;
+  width: 20%;
+  height: 200%;
+  top: 1px;
+  bottom: 1px;
+  /* opacity: 0.2;  */
+  top:-120%;
+  left: 10%;
+  transition: 2s;
+  transform: rotate(45deg);
+  z-index: 5;
+  pointer-events: none;
+}
+.ourSponsorImageBox:hover:before{
+  top:100%;
+  left:100%;
+}
+
+.ourSponsorImageBox img {
+  width: 100%;
+}
+.becomeAsponsor{
+  font-size: 1.16222vw;
+  font-family: 'OpenSans-Bold';
+  color: #6f78f3;
+  font-weight: 800;
+  margin-top: 3.35vw;
+  display: block;
+  position: relative;
+  left: -3vw;
+}
+.becomeAsponsor:hover{
+  text-decoration: underline;
+}
+
+/* main end */
