@@ -42,6 +42,7 @@ a {
 }
 
 nav {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 9vw 1vw;
   background: #f39a59;
   display: flex;
   justify-content: space-between;
@@ -173,6 +174,14 @@ h1 span {
   font-size: 0.871670vw;
   padding: 0.34vw 1vw;
   margin-bottom: .5vw;
+  background: #e0e0e0;
+  transition:0.5s ease;
+}
+.leftSide button:nth-child(1){
+  background: #f39a59;
+}
+.leftSide button:hover{
+  background: #f39a59;
 }
 
 .individualCompaniesContainer {
@@ -215,7 +224,12 @@ h1 span {
 .middlePaper {
   width: 58.1113vw;
   position: relative;
-  box-shadow: 0 0 9vw 1vw rgba(0,0,0,0.2);
+  /* box-shadow: 0 0 9vw 1vw rgba(0,0,0,0.2); */
+      /* top: -9.5vw; */
+  box-shadow: 0 0 9vw 1vw rgba(0,0,0,0);
+  top: 0;
+  transition: 1s ease;
+  transition-delay: 0.5s;
   padding: 0 4.2vw;
   box-sizing: border-box;
 }
@@ -236,10 +250,18 @@ h1 span {
   width: 15.932vw;
   background: #f7f7f7;
   margin-right: 0.5vw;
-  margin-bottom: 0.5vw;
+  margin-bottom: 1.5vw;
+  padding-bottom: 1vw;
   border: 1px solid #f4f4f4;
+  transition:0.5s ease;
+  cursor:pointer;
 }
-
+.singleAddBox:hover {
+  box-shadow: 0px 0px 4.555vw -1.286vw rgba(0, 0, 0, 0.75);
+}
+.singleAddBox:hover .addImageBox img{
+  transform:scale(1.2);
+}
 .addImageBox {
   width: 100%;
   height: 10.4600vw;
@@ -247,6 +269,8 @@ h1 span {
 }
 
 .addImageBox img {
+  transform:scale(1);
+  transition:0.5s ease;
   width: 100%;
 }
 
@@ -278,7 +302,14 @@ h1 span {
   width: 11.2vw;
   font-weight: 600;
   margin-top: 0.4vw;
+  transition:0.5s ease;
 }
+.viewDetailButton:hover{
+  border: 1px solid white;
+  background:black;
+  color:white;
+}
+
 
 /* right side */
 .rightSide{
