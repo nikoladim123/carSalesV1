@@ -162,7 +162,7 @@ h1 span {
 .navDropDownContainer a {
   font-family: 'OpenSans-Regular';
   font-size: 1vw;
-  margin: 0 1vw;
+  margin: 0 0.3vw;
   opacity: 0;
   transition: 0.45s ease;
 }
