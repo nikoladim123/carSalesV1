@@ -1,11 +1,11 @@
 .colorContainer{
-  width: 12.24489vw;
-  height: 67.219387vw;
+  width: 6.24489vw;
+  /* height: 30.219387vw; */
   margin: 1vw;
 }
 .colorLine{
   width: 100%;
-  height: 2.93367vw;
+  height: 1.93367vw;
 }
 
 .colorLine{
@@ -16,5 +16,5 @@
 }
 .colorLine:hover{
   z-index: 1;
-  transform: scale(1.2);
+  transform: scale(2);
 }
