@@ -33,9 +33,9 @@ a {
   margin-bottom: 9vw;
 }
 
-.navWrapper:hover .navDropDownContainer {
+/* .navWrapper:hover .navDropDownContainer {
   height: 2vw;
-}
+} */
 
 .navWrapper:hover .navDropDownContainer a {
   height: 2vw;
@@ -125,7 +125,7 @@ h1 span {
 
 .searchTriangle {
   border: 0.25vw solid transparent;
-  border-top: 0.325vw solid yellow;
+  border-top: 0.325vw solid #961334;
   width: 0px;
   height: 0px;
   display: inline-block;
@@ -156,6 +156,7 @@ h1 span {
   /* align-items: center; */
   justify-content: center;
   border-bottom: 0.5vw solid #d3d3d3;
+  padding-left: 17vw;
 }
 
 .navDropDownContainer a {

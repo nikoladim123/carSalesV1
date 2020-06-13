@@ -6,11 +6,13 @@ var mainHeading = document.getElementsByClassName('mainHeading');
 searchInput[0].addEventListener('focus',()=>{
   inputBox[0].style.width = '90%';
   mainHeading[0].style.opacity = '0';
+  mainHeading[0].style.pointerEvents = 'none';
 })
 
 searchInput[0].addEventListener('focusout',()=>{
   inputBox[0].style.width = '50%';
   mainHeading[0].style.opacity = '1';
+  mainHeading[0].style.pointerEvents = 'auto';
 })
 
 
@@ -62,6 +64,17 @@ for (var i = 0; i < selectCategoryButton.length; i++) {
   })
 }
 
+// mainHeading
+var mainHeading  = document.getElementsByClassName('mainHeading');
+var navDropDownContainer  = document.getElementsByClassName('navDropDownContainer');
+
+mainHeading[0].addEventListener('mouseenter',()=>{
+  navDropDownContainer[0].style.height = '2vw';
+})
+
+mainHeading[0].addEventListener('mouseleave',()=>{
+  navDropDownContainer[0].style.height = '0vw';
+})
 
 
 
