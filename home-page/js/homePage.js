@@ -67,12 +67,13 @@ for (var i = 0; i < selectCategoryButton.length; i++) {
 // mainHeading
 var mainHeading  = document.getElementsByClassName('mainHeading');
 var navDropDownContainer  = document.getElementsByClassName('navDropDownContainer');
+var navWrapper  = document.getElementsByClassName('navWrapper');
 
 mainHeading[0].addEventListener('mouseenter',()=>{
   navDropDownContainer[0].style.height = '2vw';
 })
 
-mainHeading[0].addEventListener('mouseleave',()=>{
+navWrapper[0].addEventListener('mouseleave',()=>{
   navDropDownContainer[0].style.height = '0vw';
 })
 
