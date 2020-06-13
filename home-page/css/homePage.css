@@ -4,6 +4,7 @@
 
 button {
   cursor: pointer;
+  outline: none;
 }
 
 div {
@@ -122,6 +123,20 @@ h1 span {
   font-size: 1.743341vw;
 }
 
+.searchTriangle {
+  border: 0.25vw solid transparent;
+  border-top: 0.325vw solid yellow;
+  width: 0px;
+  height: 0px;
+  display: inline-block;
+  position: relative;
+  transform: rotate(0deg);
+  left: 0vw;
+  top: 0;
+  transition: 1s ease;
+  pointer-events: none;
+}
+
 .userAvatarContainer {
   margin-right: 2.6150vw;
 }
@@ -133,13 +148,14 @@ h1 span {
 .navDropDownContainer {
   text-align: center;
   position: relative;
-  height: 0.5vw;
-  background: #d3d3d3;
+  height: 0;
+  background: #f39a59;
   overflow: hidden;
   transition: 0.5s ease;
   display: flex;
   /* align-items: center; */
   justify-content: center;
+  border-bottom: 0.5vw solid #d3d3d3;
 }
 
 .navDropDownContainer a {
@@ -175,12 +191,14 @@ h1 span {
   padding: 0.34vw 1vw;
   margin-bottom: .5vw;
   background: #e0e0e0;
-  transition:0.5s ease;
+  transition: 0.5s ease;
 }
-.leftSide button:nth-child(1){
+
+.leftSide button:nth-child(1) {
   background: #f39a59;
 }
-.leftSide button:hover{
+
+.leftSide button:hover {
   background: #f39a59;
 }
 
@@ -195,8 +213,12 @@ h1 span {
 
 .searchByTypeContainer {
   display: flex;
+  opacity: 0;
+  pointer-events: none;
+  /* display: none; */
   align-items: center;
   margin-bottom: 2vw;
+  transition: 0.5s ease;
 }
 
 .searchByTypeContainer p {
@@ -225,25 +247,26 @@ h1 span {
   width: 58.1113vw;
   position: relative;
   /* box-shadow: 0 0 9vw 1vw rgba(0,0,0,0.2); */
-      /* top: -9.5vw; */
-  box-shadow: 0 0 9vw 1vw rgba(0,0,0,0);
+  /* top: -9.5vw; */
+  box-shadow: 0 0 9vw 1vw rgba(0, 0, 0, 0);
   top: 0;
   transition: 1s ease;
   transition-delay: 0.5s;
-  padding: 0 4.2vw;
+  padding: 0 3.2vw;
   box-sizing: border-box;
 }
 
 .bannerAdd {
-    width: 100%;
-    margin-top: 1.7vw;
-    margin-bottom: 3vw;
+  width: 100%;
+  margin-top: 1.7vw;
+  margin-bottom: 3vw;
 }
 
 .midPrepopContent {
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 6vw;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 6vw;
+  justify-content: center;
 }
 
 .singleAddBox {
@@ -253,15 +276,22 @@ h1 span {
   margin-bottom: 1.5vw;
   padding-bottom: 1vw;
   border: 1px solid #f4f4f4;
-  transition:0.5s ease;
-  cursor:pointer;
+  transition: 0.5s ease;
+  cursor: pointer;
 }
+
 .singleAddBox:hover {
   box-shadow: 0px 0px 4.555vw -1.286vw rgba(0, 0, 0, 0.75);
 }
-.singleAddBox:hover .addImageBox img{
-  transform:scale(1.2);
+
+.singleAddBox:hover .addImageBox img {
+  transform: scale(1.2);
 }
+
+.singleAddBox:hover .viewDetailButton {
+  opacity: 1;
+}
+
 .addImageBox {
   width: 100%;
   height: 10.4600vw;
@@ -269,8 +299,8 @@ h1 span {
 }
 
 .addImageBox img {
-  transform:scale(1);
-  transition:0.5s ease;
+  transform: scale(1);
+  transition: 0.5s ease;
   width: 100%;
 }
 
@@ -302,34 +332,38 @@ h1 span {
   width: 11.2vw;
   font-weight: 600;
   margin-top: 0.4vw;
-  transition:0.5s ease;
-}
-.viewDetailButton:hover{
-  border: 1px solid white;
-  background:black;
-  color:white;
+  transition: 0.5s ease;
+  opacity: 0;
 }
 
+.viewDetailButton:hover {
+  border: 1px solid white;
+  background: black;
+  color: white;
+}
 
 /* right side */
-.rightSide{
+.rightSide {
   padding: 0 2vw;
-    width: 17vw;
+  width: 17vw;
 }
 
-.popularPostsContainer h3{
+.popularPostsContainer h3 {
   color: #edaf31;
   font-size: 1.74334vw;
   font-weight: 800;
+  border-bottom: 1px solid rgb(237, 175, 49, 0.3);
+  margin-top: 0;
 }
+
 .popularPostBox {
   display: flex;
   margin-bottom: 0.5vw;
 }
 
 .popularPostImageBox {
-  width: 7.263922vw;
-  height: 7.263922vw;
+  width: 6.263922vw;
+  height: 3.63922vw;
   /* border: 1px solid red; */
   display: flex;
   align-items: baseline;
@@ -337,9 +371,10 @@ h1 span {
   overflow: hidden;
   cursor: pointer;
   transition: 0.3s ease;
+  border: 1px solid;
 }
 
-.popularPostImageBox:hover{
+.popularPostImageBox:hover {
   filter: brightness(1.2);
 }
 
@@ -349,11 +384,11 @@ h1 span {
 
 .popularPostDescriptionBox {
   color: #666666;
-  margin-left: 1.5vw;
+  margin-left: 1vw;
 }
 
 .popularPostName {
-  font-size: 1.12784vw;
+  font-size: .86vw;
   font-weight: 700;
   margin: 0;
 }
@@ -361,17 +396,27 @@ h1 span {
 .popularPostAuthorName {
   font-size: 0.871670vw;
   margin: 0;
-  margin-top: 0.7vw;
+  margin-top: 0;
 }
 
 .popularPostDate {
   font-size: 0.871670vw;
   margin: 0;
   margin-top: 0.3vw;
+  color: #edaf31;
+  font-weight: 900;
 }
 
 .ourSponsorsContainer {
   margin-top: 3.45vw;
+}
+
+.ourSponsorsContainer h3 {
+  color: #edaf31;
+  font-size: 1.74334vw;
+  font-weight: 800;
+  border-bottom: 1px solid rgb(237, 175, 49, 0.3);
+  margin-bottom: 3vw;
 }
 
 .ourSponsorsContent {
@@ -388,32 +433,35 @@ h1 span {
   margin-bottom: 1.2vw;
   cursor: pointer;
 }
-.ourSponsorImageBox::before{
+
+.ourSponsorImageBox::before {
   content: '';
   display: block;
-  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
   position: absolute;
   width: 20%;
   height: 200%;
   top: 1px;
   bottom: 1px;
   /* opacity: 0.2;  */
-  top:-120%;
+  top: -120%;
   left: 10%;
   transition: 2s;
   transform: rotate(45deg);
   z-index: 5;
   pointer-events: none;
 }
-.ourSponsorImageBox:hover:before{
-  top:100%;
-  left:100%;
+
+.ourSponsorImageBox:hover:before {
+  top: 100%;
+  left: 100%;
 }
 
 .ourSponsorImageBox img {
   width: 100%;
 }
-.becomeAsponsor{
+
+.becomeAsponsor {
   font-size: 1.16222vw;
   font-family: 'OpenSans-Bold';
   color: #6f78f3;
@@ -423,7 +471,8 @@ h1 span {
   position: relative;
   left: -3vw;
 }
-.becomeAsponsor:hover{
+
+.becomeAsponsor:hover {
   text-decoration: underline;
 }
 

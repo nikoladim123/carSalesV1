@@ -232,6 +232,7 @@ nav {
   left: -1vw;
   top: 0.2vw;
   transition: 1s ease;
+  pointer-events: none;
 }
 
 /* megamenu */
